@@ -54,7 +54,7 @@ class LifeDemoViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+         print("\(__FUNCTION__) \(view.frame)")
             
     }
 
