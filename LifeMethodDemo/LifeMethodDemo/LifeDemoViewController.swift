@@ -53,37 +53,41 @@ import UIKit
 
 class LifeDemoViewController: UIViewController {
 
+    
+    override func touchesBegan(touches: Set<UITouch>, withEvent event: UIEvent?) {
+        dismissViewControllerAnimated(true, completion: nil)
+    }
     override func viewDidLoad() {
         super.viewDidLoad()
          print("\(__FUNCTION__) \(view.frame)")
             
     }
 
-    override func viewDidAppear(animated: Bool) {
-        super.viewDidAppear(animated)
-        var screenBounds = UIScreen.mainScreen().bounds
-        screenBounds.size.width += 20
-        view.frame = screenBounds
-        
-       print("\(__FUNCTION__) \(view.frame)")
-    
-    }
-    
-    override func viewWillAppear(animated: Bool) {
-        super.viewWillAppear(animated)
-        print("\(__FUNCTION__) \(view.frame)")
-    }
-    
-    
-    override func viewDidLayoutSubviews() {
-        super.viewDidLayoutSubviews()
-        
+//    override func viewDidAppear(animated: Bool) {
+//        super.viewDidAppear(animated)
 //        var screenBounds = UIScreen.mainScreen().bounds
 //        screenBounds.size.width += 20
 //        view.frame = screenBounds
-        
-       print("\(__FUNCTION__) \(view.frame)")
-    }
+//        
+//       print("\(__FUNCTION__) \(view.frame)")
+//    
+//    }
+//    
+//    override func viewWillAppear(animated: Bool) {
+//        super.viewWillAppear(animated)
+//        print("\(__FUNCTION__) \(view.frame)")
+//    }
+//    
+//    
+//    override func viewDidLayoutSubviews() {
+//        super.viewDidLayoutSubviews()
+//        
+////        var screenBounds = UIScreen.mainScreen().bounds
+////        screenBounds.size.width += 20
+////        view.frame = screenBounds
+//        
+//       print("\(__FUNCTION__) \(view.frame)")
+//    }
     
     override func viewWillLayoutSubviews() {
         super.viewWillLayoutSubviews()

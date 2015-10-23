@@ -11,7 +11,9 @@ class ViewController: UIViewController {
         
         Vc.transitioningDelegate = self
         
-        Vc.modalPresentationStyle = UIModalPresentationStyle.Popover
+        //这个只是需要modal的显示  ，和其他的没有关系
+        Vc.modalPresentationStyle = UIModalPresentationStyle.Custom
+        //这个才是dismiss显示的动画转换的方式
         Vc.modalTransitionStyle = UIModalTransitionStyle.FlipHorizontal
        
         
