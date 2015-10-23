@@ -9,7 +9,8 @@ layoutSubviews() (0.0, 0.0, 375.0, 667.0)
 viewDidAppear (0.0, 0.0, 375.0, 667.0)
 
 loadView 直接指定视图的大小
-loadView() (0.0, 0.0, 395.0, 667.0)
+loadView() (0.0, 0.0
+, 395.0, 667.0)
 viewDidLoad() (0.0, 0.0, 395.0, 667.0)
 viewWillAppear (0.0, 0.0, 395.0, 667.0)
 viewWillLayoutSubviews() (0.0, 0.0, 375.0, 667.0)
@@ -95,13 +96,11 @@ class LifeDemoViewController: UIViewController {
         screenView.size.width += 20
         view = UIView(frame: screenView)
         
-        view.backgroundColor = UIColor.lightGrayColor()
+      
         let v = LifeView()
         v.frame = screenView
+        v.backgroundColor = UIColor.redColor()
         view.addSubview(v)
        print("\(__FUNCTION__) \(view.frame)")
     }
-    
-
-
 }

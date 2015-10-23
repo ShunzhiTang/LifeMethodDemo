@@ -8,7 +8,7 @@ class LifeView: UIView {
     
     override init(frame: CGRect) {
         super.init(frame: frame)
-        backgroundColor = UIColor.blueColor()
+//        backgroundColor = UIColor.blueColor()
     }
 
     required init?(coder aDecoder: NSCoder) {
